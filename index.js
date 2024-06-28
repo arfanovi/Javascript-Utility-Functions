@@ -23,3 +23,13 @@ const arrayFirstName = ['Arfan'];
 const arrayLastName = ['Ovi'];
 const mergeArray = mergeArrays(arrayFirstName,arrayLastName);
 console.log(mergeArray)
+
+
+// Create a function ‘arrayValuesTypes’ that takes an array and returns the types of values (data types) in a new array. Ex- arrayValuesTypes([1, 2, "null", []]) ➞ ["number", "number", "string", "object"]
+
+function arrayValueTypes(array){
+    return array.map(item => typeof item);
+}
+
+const result = arrayValueTypes([1,2,"null", []]);
+console.log(result);
