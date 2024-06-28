@@ -6,12 +6,33 @@
 
 
 
-// function circuitPower(voltage, current){
-//     return voltage * current;
-// }
-// // console.log()
-// const input = circuitPower(10,10);
-// console.log(input)
+function circuitPower(voltage, current){
+    return voltage * current;
+}
+// console.log()
+const input = circuitPower(10,10);
+console.log(input)
+
+
+
+// Write a JavaScript function named ‘findMaxNumber’ that takes an array of numbers as an argument and returns the maximum number in the array. If the array is empty, the function should return null.
+
+function findMaxNumber(array){
+    if(array.length === 0) {
+        return null;
+    }
+    return Math.max(...array)
+}
+
+const arrayNumber = [ 10,20,3,0,4,50,666,8];
+const maxArrayNumbers = findMaxNumber(arrayNumber);
+console.log(maxArrayNumbers);
+
+const emptyArray = [];
+const maxEmptyArray = findMaxNumber(emptyArray);
+console.log(maxEmptyArray)
+
+
 
 
 // // Javascript Function to Merge Two Array
@@ -33,3 +54,5 @@ function arrayValueTypes(array){
 
 const result = arrayValueTypes([1,2,"null", []]);
 console.log(result);
+
+
